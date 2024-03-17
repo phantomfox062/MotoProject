@@ -1,0 +1,87 @@
+﻿@model MotoProject.Models.Motors
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<style>
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid blac;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    body {
+        background-color: grey;
+    }
+</style>
+<h1>𝓔𝓭𝓲𝓽</h1>
+
+<h4>Motors</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="brand" class="control-label"></label>
+                <input asp-for="brand" class="form-control" />
+                <span asp-validation-for="brand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="model" class="control-label"></label>
+                <input asp-for="model" class="form-control" />
+                <span asp-validation-for="model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="date" class="control-label"></label>
+                <input asp-for="date" class="form-control" />
+                <span asp-validation-for="date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="hp" class="control-label"></label>
+                <input asp-for="hp" class="form-control" />
+                <span asp-validation-for="hp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="color" class="control-label"></label>
+                <input asp-for="color" class="form-control" />
+                <span asp-validation-for="color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

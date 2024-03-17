@@ -1,0 +1,97 @@
+﻿@model IEnumerable<MotoProject.Models.Clients>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid blac;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+    .table {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .edit {
+        background-color: #04AA6D;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 70px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    body {
+        background-color: grey;
+    }
+</style>
+<h1>𝓒𝓵𝓲𝓮𝓷𝓽𝓼</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.id"><div class="edit">Edit</div></a>
+                    <a asp-action="Details" asp-route-id="@item.id"><div class="edit">Details</div></a>
+                    <a asp-action="Delete" asp-route-id="@item.id"><div class="edit">Delete</div></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
