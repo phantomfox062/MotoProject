@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\MotoProject.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\todor.nikolov\\Desktop\\MotoProject\\MotoProject\\wwwroot\\css\\Brick.jpg",
+      "PackagePath": "staticwebassets\\css\\Brick.jpg"
+    },
+    {
+      "Id": "C:\\Users\\todor.nikolov\\Desktop\\MotoProject\\MotoProject\\wwwroot\\css\\Syzdatel.jpg",
+      "PackagePath": "staticwebassets\\css\\Syzdatel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\todor.nikolov\\Desktop\\MotoProject\\MotoProject\\wwwroot\\css\\car.jpg",
+      "PackagePath": "staticwebassets\\css\\car.jpg"
+    },
+    {
+      "Id": "C:\\Users\\todor.nikolov\\Desktop\\MotoProject\\MotoProject\\wwwroot\\css\\car.png",
+      "PackagePath": "staticwebassets\\css\\car.png"
+    },
+    {
+      "Id": "C:\\Users\\todor.nikolov\\Desktop\\MotoProject\\MotoProject\\wwwroot\\css\\clients.jpg",
+      "PackagePath": "staticwebassets\\css\\clients.jpg"
+    },
+    {
+      "Id": "C:\\Users\\todor.nikolov\\Desktop\\MotoProject\\MotoProject\\wwwroot\\css\\moto.jpg",
+      "PackagePath": "staticwebassets\\css\\moto.jpg"
+    },
+    {
       "Id": "C:\\Users\\todor.nikolov\\Desktop\\MotoProject\\MotoProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

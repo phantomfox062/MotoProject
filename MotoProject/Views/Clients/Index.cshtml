@@ -42,17 +42,29 @@
         width: 70px;
         text-align: center;
         margin: 10px;
+        text-decoration : none;
     }
 
     body {
-        background-color: grey;
+        background-image: url("/css/clients.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: "Lato", sans-serif;
+        color: white;
+        line-height: 1.8;
     }
 </style>
 <h1>𝓒𝓵𝓲𝓮𝓷𝓽𝓼</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
+    <p >
+    <a style="color: white; width: 90px;  background-color: #04AA6D; border-radius: 4px;
+        cursor: pointer;
+      text-decoration : none;
+padding :10px;
+        text-align: center;" asp-action="Create">Create New</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
